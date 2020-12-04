@@ -7,7 +7,7 @@ const check = rule => {
 
 const count = (str, char) => (str.match(new RegExp(char, "g")) || []).length;
 
-const rules = readfile('day3-4.txt')
+const rules = readfile('day2.txt')
 	.map(y => y.split(" "))
 	.map(a => ({rule: a[0].split("-").map(Number), char: a[1][0], password: a[2]}))
 	
